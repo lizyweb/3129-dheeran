@@ -1,0 +1,427 @@
+:root {
+    --brand: #038875;
+    --sub: #F4DD11;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+/*** Carousel Hero Header Start ***/
+.header-carousel {
+    position: relative;
+  }
+  
+  .header-carousel .owl-nav .owl-prev {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--brand);
+    color: var(--bs-white);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .header-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--brand);
+    color: var(--bs-white);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  .header-carousel .owl-nav .owl-prev,
+  .header-carousel .owl-nav .owl-next {
+    transition: 0.5s;
+  }
+  
+  .header-carousel .owl-nav .owl-prev:hover,
+  .header-carousel .owl-nav .owl-next:hover {
+    box-shadow: inset 150px 0 0 0 var(--bs-light) !important;
+    color: var(--brand) !important;
+  }
+  
+  @media (max-width: 576px) {
+  
+    .header-carousel .owl-nav .owl-prev,
+    .header-carousel .owl-nav .owl-next {
+      top: 630px;
+      transition: 0.5s;
+    }
+  
+    .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+      width: 95% !important;
+    }
+  
+  }
+  
+  .header-carousel .header-carousel-item,
+  .header-carousel .header-carousel-item img {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    /* margin-top: 95px; */
+    display: block;
+    object-fit: cover;
+    transition: 0.5s;
+  
+  }
+  
+  @media (max-width: 992px) {
+  
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+      margin-top: 0;
+      transition: 0.5s;
+    }
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+    .header-carousel .owl-nav .owl-prev,
+    .header-carousel .owl-nav .owl-next {
+      margin-top: 50px;
+    }
+  }
+  
+  .header-carousel .header-carousel-item .carousel-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+  }
+  
+  .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+    position: relative;
+    width: 75%;
+  
+  }
+  .carousel-caption-content h1{
+    font-weight: bold;
+    color: var(--sub);
+  }
+  
+  /*** Carousel Hero Header End ***/
+  
+  /*** Button Start ***/
+  .btn {
+    font-weight: 600;
+    transition: .5s;
+  }
+  
+  .btn.btn-slide {
+    /* box-shadow: inset 0 0 0 0 white; */
+    background-color: var(--sub);
+    color: white;
+    border: none;
+  }
+  
+  .btn.btn-slide:hover {
+    /* box-shadow: inset 300px 0 0 0 var(--brand); */
+    color: var(--brand) !important;
+    background-color: transparent;
+    border: 1px solid var(--brand);
+  }
+  /* ================================  */
+  .custom-container {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 8px 12px rgb(0,0,0,.2);
+  }
+  .custom-container i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .btn-slide-3{
+    background-color: var(--brand);
+    color: white;
+    border-radius: 10px;
+  }
+  .btn-slide-3:hover{
+    background-color: transparent;
+    color: var(--brand);
+    /* border-radius: 20px; */
+    border: 2px solid var(--brand);
+  }
+  /* =============================  */
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  /* =====================================  */
+ .con-card-3 {.card-title{
+  background: linear-gradient(to right, #038875, #F4DD11);
+   -webkit-background-clip: text; 
+   color: transparent;
+   font-weight: bolder;
+   font-size: 1.8rem;
+ }
+
+
+ .card {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);  /* Lifts and slightly enlarges the card */
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2); /* Adds shadow for a lifted effect */
+}
+}
+/* =========== contact start ============== */
+/* Make the map and contact info the same height */
+.map-container,
+.contact-info-container {
+  height: 100%;
+}
+
+/* Align the contact information in one column (single item per row) */
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contact-info-row {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  width: 100%;
+  /* Ensure each item takes up full width */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* Adjust to fill entire row */
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--sub);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon i {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contact-text {
+  padding-left: 15px;
+}
+
+.contact-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+.contact-text p {
+  font-size: 16px;
+  color: #454545;
+}
+
+/* Styling for social icons */
+.contact-social a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: var(--sub);
+}
+
+.contact-social a:hover {
+  color: #719a0a;
+}
+
+/* Ensure map has proper sizing and responsiveness */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* =====================  */
+
+/* =========== contact end ============== */
+.counter {
+	padding-bottom: 70px;
+}
+
+.counter .counter__content {
+	border: none;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.counter .counter__item .counter__item__text h5 {
+	color: #ffffff;
+}
+
+.counter__content {
+	border-top: 1px solid rgba(183, 183, 183, 0.2);
+	padding-top: 70px;
+	margin-top: 40px;
+}
+
+.counter__item {
+	margin-bottom: 30px;
+}
+
+.counter__item__number {
+	float: left;
+	margin-right: 20px;
+}
+
+.counter__item__number h2 {
+	color: var(--brand);
+	font-size: 60px;
+	line-height: 52px;
+}
+
+.counter__item__text {
+	overflow: hidden;
+}
+
+.counter__item__text h5 {
+	color: #111111;
+	line-height: 24px;
+	text-transform: uppercase;
+  font-size:medium;
+}
+/* ================ testimonial strt =====================  */
+
+/*** Testimonial ***/
+.testimonial-carousel .owl-dots {
+  height: 40px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 2px solid var(--sub);
+  transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+  width: 30px;
+  height: 30px;
+  background: white;
+}
+
+.testimonial{
+  border: 2px solid var(--brand);
+}
+
+
+.testimonial-item .author{
+  color: var(--sub);
+}
+.testimonial-item p,hr{
+  color: whitesmoke;
+}
+/* ==================================  */
+.book-now-btns{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang-text{
+  font-weight: 700;
+  color: black;
+}
+
+.button-box{
+  border: 2px solid var(--brand);
+  width: 140px;
+  height: 30px;
+  position: relative;
+  border-radius: 30px;
+  background-color: var(--sub);
+}
+.toggle-btn{
+  font-weight: 700;
+  width: 65px;
+  background: transparent;
+  border: none;
+  padding: 0px 10px;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+}
+.btns{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 65px;
+  height: 100%;
+  border-radius: 30px;
+  background-color: white;
+}
+.btnss{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 65px;
+  height: 100%;
+  border-radius: 30px;
+  background-color: white;
+}
+
+@media (max-width: 967px) {
+  .button-box{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 467px) {
+  .topbar-a-1{
+   font-size: 10px;
+  }
+}
